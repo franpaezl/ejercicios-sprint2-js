@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+
+    <main>
+                <!-- 1 -->
+
+        <div class="contenedor mx-[30px] flex flex-wrap gap-[100px]">
+        <div>
+            <div class="div1 w-[300px] h-[300px] bg-slate-400 my-[20px]"></div>
+            <button class="button1 border-2 border-gray-300 bg-gray-700 px-[10px]">Change</button>
+
+        </div>
+                <!-- 2 -->
+
+        <div>
+            <div class="div2 w-[300px] h-[300px] bg-slate-400 my-[20px]"></div>
+            <form  class="form py-[10px]" action="">
+                <input class="border-2 border-black" type="text" id="texto">
+            </form>
+            <button class="button2 border-2 border-gray-300 bg-gray-700 px-[10px]">Reset</button>
+        </div>
+
+                <!-- 3 -->
+
+
+        <div>
+            <div class="div2 w-[300px] h-[300px] bg-slate-400 my-[20px] p-[10px] flex">
+                <form class="form3 border-2 border-black flex flex-col justify-evenly" action="">
+                    <fieldset class="">
+                        <legend>Estatura</legend>
+                        <label for="estatura" class="text-[12px]">en centimetros</label>
+                        <input type="number" id="estatura">
+                    </fieldset>
+                    <fieldset class="">
+                        <legend>Peso</legend>
+                        <label for="peso" class="text-[12px]">en kilogramos</label>
+                        <input type="number" id="peso">
+                    </fieldset>
+                    <input type="submit" class="button3 border-2 border-gray-300 bg-gray-700 px-[10px]" >
+                </form>
+            </div>
+            <div class="div3 w-[300px] h-[300px] bg-slate-400 my-[20px] p-[10px] flex flex-col">
+                <h3>Resultado</h3>
+                <p>Su indice de masa corporal es de:</p>
+                <div class="div3__hijo bg-white text-center"></div>
+            </div>
+        </div>
+
+        <!-- 4 -->
+    
+        <div class="flex flex-wrap my-[30px] gap-[10px]">
+
+            <div class="p-4 bg-gray-400 ">
+                <h2 class="text-lg font-bold mb-4">Convertir de Peso a USD</h2>
+                <form class="form4 flex flex-col gap-2">
+                    <label for="montoPeso">Monto en Peso:</label>
+                    <input type="number" id="montoPeso" class="border-2 border-gray-300 ">
+                    <button type="submit" class="bg-gray-700 text-white ">Convertir a USD</button>
+                </form>
+                <div id="pesoAUsdResultado" class="mt-4"></div>
+            </div>
+
+
+            <div class="p-4 bg-gray-400 ">
+                <h2 class="text-lg font-bold mb-4">Convertir de USD a Peso</h2>
+                <form  class="form5 flex flex-col gap-2">
+                    <label for="montoUsd">Monto en USD:</label>
+                    <input type="number" id="montoUsd" class="border-2 border-gray-300 ">
+                    <button type="submit" class="bg-gray-700 text-white ">Convertir a Peso</button>
+                </form>
+                <div id="usdAPesoResultado" class="mt-4"></div>
+            </div>
+        </div>
+
+        <button id="reset" class="bg-red-500 text-white px-[10px] h-[30px] self-end mb-[30px]">Borrar</button>
+
+    </div>
+
+    
+    </main>
+
+
+
+
+
+    <footer>
+
+    </footer>
+
+
+    <script src="./grafiti.js"></script>
+</body>
+
+</html>
